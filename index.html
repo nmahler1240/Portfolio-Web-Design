@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <title></title>
+    <title>Nick Mahler Web Design</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css"/>
     <link rel="stylesheet" type="text/css" href="styles.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="logo.png">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
 </head>
@@ -67,21 +68,99 @@
     </div>
 </section>
 
-<!--skills section-->
+<!--SKILLS SECTION-->
 <section class="pro">
+  <div class="row">
+    <div class="col col-12-lg">
+      <h1 style="text-align:center;"><strong>Skills</strong></h2>
+    </div>
+  </div>
 <div class="container-fluid">
   <div class="row">
     <div class="col col-4-lg">
       <a href="#"><img class="rounded-circle aboutImg" src="1.png"></a>
-      <p style="text-align:center;">Proficient in CSS</p>
+      <h3 style="text-align:center;">Proficient in CSS</h3>
+      <div class="bar-holder">
+        <div class="bar-3">65%</div>
+      </div>
+      <p class="skillP" style="text-align:center;">Comfortable using common bootstrap and other common frameworks as well as adding my own styles when needed.</p>
     </div>
       <div class="col col-4-lg">
         <a href="#"><img class="rounded-circle aboutImg" src="2.png"></a>
-        <p style="text-align:center;">Proficient in HTML</p>
+        <h3 style="text-align:center;">Proficient in HTML</h3>
+        <div class="bar-holder">
+          <div class="bar-1">80%</div>
+        </div>
+        <p class="skillP" style="text-align:center;">Quick and effient code getting everything working looking and working as it should. </p>
       </div>
       <div class="col col-4-lg">
         <a href="#"><img class="rounded-circle aboutImg" src="3.png"></a>
-        <p style="text-align:center;">Proficient in Java Script</p>
+        <h3 style="text-align:center;">Proficient in Java Script</h3>
+        <div class="bar-holder">
+          <div class="bar-2">60%</div>
+        </div>
+        <p class="skillP" style="text-align:center;">DOM manipulation and other common uses of JS are just a few of the essentials I can bring to your website. Check out my github projects<a target="_blank" style="text-decoration:none; color:black;" href="https://github.com/nmahler1240/FontPicker"> HERE</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--WORK SECTION-->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div id="work" class="carousel-inner">
+    <div class="carousel-item active">
+      <a target="_blank" href="#imgCar"><img src="onewheelSite.PNG" class="d-block w-100 carImg" alt="..."></a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="carCapt">Naz-T Rob's Float Shop</h5>
+        <p class="carCapt">Small repair shop website developed for the client.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+        <a target="_blank" href="#imgCar"><img src="wanderlustSite.PNG" class="d-block w-100 carImg" alt="..."></a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="carCapt">Wanderlust Bar</h5>
+        <p class="carCapt">Simple website for a bar in Madrid Spain.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+        <a target="_blank" href="#imgCar"><img src="MVPSite.PNG" class="d-block w-100 carImg" alt="..."></a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="carCapt">MVP Barber Studio</h5>
+        <p class="carCapt">Barber website which includes client side reservations.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<section>
+  <div class="container-fluid workSection">
+    <div class="row">
+      <div class="col col-12-lg">
+        <h1 id="imgCar" style="text-align:center; padding-bottom:50px;"><strong>Recent Work</strong></h1>
+      </div>
+      <div class="row">
+        <div class="col col-4-lg workCol">
+          <h3>Naz-T Rob's Float Shop</h3>
+          <a target="_blank" href="https://www.onewheelnwa.com/"><img class="img-fluid workImage" src="onewheelSite.PNG" alt=""></a>
+          <p style="line-height:1.6;padding-top:10px;">Small repair shop website developed for the client. The site includes contact and repair forms that go directly to the shop and facilitate fast and easy communication. Click <a style="text-decoration: none; color:black;" target="_blank" href="https://www.onewheelnwa.com/">HERE</a> to see the site. </p>
+        </div>
+        <div class="col col-4-lg workCol">
+          <h3>Wanderlust Bar</h3>
+          <a target="_blank" href="https://wanderlust-bar-madrid.web.app/"><img class="img-fluid workImage workCol" src="wanderlustSite.PNG" alt=""></a>
+          <p style="line-height:1.6;padding-top:10px;">Simple website for a bar in Madrid Spain in order to help them reach out to more customers. Click <a style="text-decoration: none;color:black;" target="_blank" href="https://wanderlust-bar-madrid.web.app/">HERE</a> to see the site.</p>
+        </div>
+        <div class="col col-4-lg workCol">
+          <h3>MVP Barber Studio</h3>
+          <a target="_blank" href="https://mvp-barber-madrid.web.app/"><img class="img-fluid workImage workCol" src="MVPSite.PNG" alt=""></a>
+          <p style="line-height:1.6; padding-top:10px;">Barber shope website which includes client side reservations. Click <a style="text-decoration: none;color:black;" target="_blank" href="https://mvp-barber-madrid.web.app/">HERE</a> to see the site.</p>
+        </div>
       </div>
     </div>
   </div>
