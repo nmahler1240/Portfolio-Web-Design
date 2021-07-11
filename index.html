@@ -15,8 +15,79 @@
 <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
 </head>
 <body onload="myFunction()" style="margin:0;">
+<!--LOADER-->
+<style>
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -76px 0 0 -76px;
+  border: 10px solid black;
+  border-radius: 50%;
+  border-top: 10px solid #be9df5;
+  border-bottom: 10px solid #ededed;
+  border-right: 10px solid #001ac2;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+</style>
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
 
 
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 2000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+<!--LOADER END-->
 <!---navbar-------------->
 <nav class="navbar navbar-expand-sm fixed-top navbar-dark">
   <div class="container-fluid">
@@ -42,6 +113,7 @@
   </div>
 </nav>
 
+
 <div class="lines">
   <div class="line"></div>
   <div class="line"></div>
@@ -49,9 +121,10 @@
 </div>
 
 
+
 <section class="overlay1">
   <div class="container-fluid bg-overlay">
-  		<h1 data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-duration="2000" data-aos-offset="0" class="display-3" style="text-align:center;">Nick Mahler Web Design,<br> your website how you want it.</h1>
+  		<h1 data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-duration="3000" data-aos-offset="0" class="display-3" style="text-align:center;">Nick Mahler Web Design,<br> your website how you want it.</h1>
           <h4 data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-duration="3000" data-aos-offset="0" style="text-align:center; font-size:30px;" class="display-7">Let me help you create <strong>the website of your dreams </strong>quickly and affordably.<br>
           Here is some of my recent work!</h4>
         <div style="text-align:center;" class="container-fluid btn1">
@@ -74,6 +147,8 @@
     </div>
     </div>
 </section>
+
+
 <!--SKILLS SECTION-->
 <section class="pro">
   <div class="row">
@@ -214,17 +289,5 @@
   AOS.init();
 </script>
 <!--LOADER JS-->
-<script>
-var myVar;
-
-function myFunction() {
-  myVar = setTimeout(showPage, 3000);
-}
-
-function showPage() {
-  document.getElementById("lds-ripple").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
-}
-</script>
 </body>
 </html>
