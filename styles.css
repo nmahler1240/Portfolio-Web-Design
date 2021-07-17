@@ -43,11 +43,7 @@ li a{
   padding-top: 50px;
 }
 .about{
-<<<<<<< Updated upstream
   background-image: linear-gradient(to bottom right , #171717 , #000000);
-=======
-  background-image: linear-gradient(to bottom right , black , darkgrey);
->>>>>>> Stashed changes
   height: 750px;
 
 }
