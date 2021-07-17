@@ -43,7 +43,7 @@ li a{
   padding-top: 50px;
 }
 .about{
-  background-color: black;
+  background-image: linear-gradient(to bottom right , #171717 , #000000);
   height: 750px;
 
 }
